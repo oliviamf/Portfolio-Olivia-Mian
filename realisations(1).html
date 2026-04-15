@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Réalisations | Olivia MIAN</title>
+<link rel="stylesheet" href="realisations1.css">
+</head>
+<body>
+
+<div id="cDot"></div>
+<div id="cRing"></div>
+
+<div class="tbtns">
+  <button class="tbtn" id="t-dark"      onclick="setT('dark')">Sombre</button>
+  <button class="tbtn" id="t-light"     onclick="setT('light')">Lumineux</button>
+  <button class="tbtn" id="t-daltonien" onclick="setT('daltonien')">Contraste+</button>
+</div>
+
+<!-- VUE PROJET IMMERSIVE -->
+<div id="pv">
+  <button class="pv-close" onclick="closePV()">← Retour</button>
+  <button class="pv-dismiss" onclick="closePV()">✕</button>
+
+  <div class="pv-hero">
+    <img class="pv-hero-img" id="pvImg" src="" alt="">
+    <div class="pv-hero-grad"></div>
+    <div class="pv-hero-content">
+      <span class="pv-hero-badge" id="pvBadge"></span>
+      <div class="pv-hero-num" id="pvNum"></div>
+      <h1 class="pv-hero-title" id="pvTitle"></h1>
+    </div>
+  </div>
+
+  <div class="pv-body">
+    <div class="pv-main">
+      <p class="pv-desc" id="pvDesc"></p>
+      <div class="pv-stats" id="pvStats"></div>
+      <h2 class="pv-gallery-title">Visuels du projet</h2>
+      <div class="pv-gallery" id="pvGallery"></div>
+    </div>
+
+    <aside class="pv-side">
+      <div class="pv-side-block">
+        <div class="pv-side-label">Compétences</div>
+        <div class="pv-side-tags" id="pvTags"></div>
+      </div>
+      <div class="pv-side-block pv-side-meta" id="pvMeta"></div>
+      <a class="pv-side-link hidden" id="pvLink" href="#" target="_blank">Voir le projet ↗</a>
+    </aside>
+  </div>
+
+  <div class="pv-next" id="pvNext">
+    <div class="pv-next-label">Vous pourriez aussi aimer</div>
+    <div class="pv-next-grid" id="pvNextGrid"></div>
+  </div>
+
+  <footer>
+    <div class="flogo">Olivia<b>.</b></div>
+    <div class="flinks"><a href="index.html">Accueil</a><a href="img/cv-mian_olivia.pdf">Mon CV</a></div>
+    <span class="fcopy">© 2025 Olivia MIAN</span>
+  </footer>
+</div>
+
+<!-- Viewer media plein écran -->
+<div id="mv" onclick="closeMV()">
+  <button class="mv-close" onclick="closeMV()">×</button>
+  <div id="mvContent"></div>
+</div>
+
+<header>
+  <a href="index.html" class="logo">Olivia<b>.</b></a>
+  <nav>
+    <a href="index.html#about">Profil</a>
+    <a href="index.html#proj">Projets</a>
+    <a href="realisations.html" class="act">Réalisations</a>
+  </nav>
+  <a href="index.html#contact" class="ncta">Me contacter</a>
+</header>
+<div class="hsp"></div>
+
+<div class="hero">
+  <div class="slbl rv"><div class="sll"></div><span class="slt">Portfolio</span><span class="sln">— Toutes les réalisations</span></div>
+  <h1 class="htit rv d1">Mes <em>Productions</em></h1>
+  <p class="hsub rv d2">Graphisme, développement, communication et audiovisuel — une sélection de créations réalisées au fil de ma formation BUT MMI.</p>
+</div>
+
+<div class="fwrap">
+  <div class="frow">
+    <span class="flbl">Filtrer :</span>
+    <button class="fb on" id="fb-all" onclick="filt('all')"><span>Tout <span class="cnt" id="cn-all"></span></span></button>
+    <button class="fb" id="fb-gr"  onclick="filt('gr')"><span>Graphisme <span class="cnt" id="cn-gr"></span></span></button>
+    <button class="fb" id="fb-com" onclick="filt('com')"><span>Communication <span class="cnt" id="cn-com"></span></span></button>
+    <button class="fb" id="fb-av"  onclick="filt('av')"><span>Audiovisuel <span class="cnt" id="cn-av"></span></span></button>
+    <button class="fb" id="fb-dev" onclick="filt('dev')"><span>Développement <span class="cnt" id="cn-dev"></span></span></button>
+  </div>
+</div>
+
+<div class="gwrap">
+  <div class="rg" id="rg">
+
+    <!-- 001 — Vie Consulting -->
+    <div class="ri rv"
+      data-c="com"
+      data-i="https://ik.imagekit.io/fj6o3tgrf/Vie%20Consulting.png?updatedAt=1747031388562"
+      data-cl="Communication"
+      data-n="001"
+      data-t="Vie Consulting"
+      data-d="Stratégie de communication complète et supports visuels pour Vie Consulting. Développement de l'identité de marque, création de supports print et digitaux, et mise en place d'une ligne éditoriale cohérente."
+      data-tg="Branding,Logo,Communication,Print"
+      data-meta='{"Catégorie":"Communication","Année":"2025","Contexte":"SAE 2.02","Outil":"Illustrator · Photoshop · Premiere Pro"}'
+      data-stats='[{"val":"4","lbl":"Extraits du projet"},{"val":"2025","lbl":"Année"},{"val":"SAE","lbl":"Contexte"}]'
+      data-gallery='["https://ik.imagekit.io/fj6o3tgrf/Vie%20Consulting.png?updatedAt=1747031388562","img/Le_logotype_horizontal.png","img/Le_logotype_monochrome.png","img/Le_logotype_et_les couleurs associées.png"]'>
+      <img class="ri-img" src="https://ik.imagekit.io/fj6o3tgrf/Vie%20Consulting.png?updatedAt=1747031388562" alt="">
+      <div class="ri-ov"></div>
+      <div class="ri-cat">Communication</div>
+      <div class="ri-arr">↗</div>
+      <div class="ri-body">
+        <div class="ri-num">001</div>
+        <h3 class="ri-title">Vie Consulting</h3>
+      </div>
+      <div class="ri-line"></div>
+    </div>
+
+    <!-- 002 — Krowsh -->
+    <div class="ri rv d1"
+      data-c="gr"
+      data-i="https://ik.imagekit.io/fj6o3tgrf/Krowsh%20Logo.jpg?updatedAt=1746578770480"
+      data-cl="Graphisme"
+      data-n="002"
+      data-t="Krowsh — Identité de marque"
+      data-d="Charte graphique complète pour une marque fictive de céréales jeunesse : logo, typographie, palette de couleurs et supports. Un exercice complet de direction artistique mêlant fun et cohérence visuelle."
+      data-tg="Charte graphique,Logo,SAE 1.06,Illustrator"
+      data-meta='{"Catégorie":"Graphisme","Année":"2025","Contexte":"SAE 1.06","Outil":"Illustrator · Photoshop · InDesign"}'
+      data-stats='[{"val":"4","lbl":"Extraits du projet"},{"val":"2025","lbl":"Année"},{"val":"Illus.","lbl":"Outil principal"}]'
+      data-gallery='["IMG/IMG_4.jpg","img/IMG_3.jpg","img/IMG_2.jpg","img/IMG_1.jpg"]'>
+      <img class="ri-img" src="https://ik.imagekit.io/fj6o3tgrf/Krowsh%20Logo.jpg?updatedAt=1746578770480" alt="">
+      <div class="ri-ov"></div>
+      <div class="ri-cat">Graphisme</div>
+      <div class="ri-arr">↗</div>
+      <div class="ri-body">
+        <div class="ri-num">002</div>
+        <h3 class="ri-title">Krowsh — Identité de marque</h3>
+      </div>
+      <div class="ri-line"></div>
+    </div>
+
+    <!-- 003 — The Camp -->
+    <div class="ri rv d2"
+  data-c="com"
+  data-i="https://ik.imagekit.io/fj6o3tgrf/The%20Camp.png?updatedAt=1747016872578"
+  data-cl="Communication"
+  data-n="003"
+  data-t="The Camp — Serious Game"
+  data-d="Jeu immersif sur l'histoire du camp Jacob à Saint-Claude en Guadeloupe. QR codes, énigmes et parcours interactif sur le campus. Un projet mêlant game design, histoire locale et communication événementielle."
+  data-tg="Game Design,Histoire,SAE 2.01,QR Codes"
+  data-meta='{"Catégorie":"Communication","Année":"2024","Contexte":"SAE 2.01","Format":"Présentiel"}'
+  data-stats='[{"val":"4","lbl":"Extraits du projet"},{"val":"2024","lbl":"Année"},{"val":"SAE","lbl":"Contexte"}]'
+  data-gallery='[
+"img/srgp.png",
+"img/srgu.png",
+"img/srgt.png",
+"img/srgd.png"
+]'
+  data-dev-link="https://thecampmmi.netlify.app/"
+  data-dev-label="Voir le jeu">
+
+  <img class="ri-img" src="https://ik.imagekit.io/fj6o3tgrf/The%20Camp.png?updatedAt=1747016872578" alt="">
+  <div class="ri-ov"></div>
+  <div class="ri-cat">Communication</div>
+  <div class="ri-arr">↗</div>
+
+  <div class="ri-body">
+    <div class="ri-num">003</div>
+    <h3 class="ri-title">The Camp — Serious Game</h3>
+  </div>
+
+  <div class="ri-line"></div>
+</div>
+
+    <!-- 004 — JPO BUT MMI -->
+    <div class="ri rv d1"
+      data-c="com gr"
+      data-i="https://ik.imagekit.io/fj6o3tgrf/BUTMMI.png?updatedAt=1747120033850"
+      data-cl="Communication"
+      data-n="004"
+      data-t="JPO BUT MMI"
+      data-d="Organisation d'ateliers interactifs autour de la photographie et de Canva pour valoriser la formation BUT MMI lors des Journées Portes Ouvertes. Animation, création de supports et accueil du public."
+      data-tg="Événementiel,Design,Canva,SAE 1.06"
+      data-meta='{"Catégorie":"Communication","Année":"2025","Contexte":"SAE 1.06","Format":"Événementiel"}'
+      data-stats='[{"val":"4","lbl":"Extraits du projet"},{"val":"2025","lbl":"Année"},{"val":"JPO","lbl":"Événement"}]'
+      data-gallery='["img/But_Regles.png","img/jeu_dernier.png","img/Jeux_premier.png","img/Jeu_deuxieme.png"]'>
+      <img class="ri-img" src="https://ik.imagekit.io/fj6o3tgrf/BUTMMI.png?updatedAt=1747120033850" alt="">
+      <div class="ri-ov"></div>
+      <div class="ri-cat">Communication</div>
+      <div class="ri-arr">↗</div>
+      <div class="ri-body">
+        <div class="ri-num">004</div>
+        <h3 class="ri-title">JPO BUT MMI</h3>
+      </div>
+      <div class="ri-line"></div>
+    </div>
+
+    <!-- 005 — Typographie Suisse -->
+    <div class="ri rv d2"
+      data-c="gr"
+      data-i="img/TYPE SUISSE.png"
+      data-cl="Graphisme"
+      data-n="005"
+      data-t="Typographie Suisse"
+      data-d="Exercice de composition typographique inspiré du style international suisse — grille, hiérarchie et minimalisme. Un travail rigoureux sur la lisibilité et l'équilibre visuel dans la tradition du design graphique moderniste."
+      data-tg="Typographie,Composition,Design,Grille"
+      data-meta='{"Catégorie":"Graphisme","Année":"2023","Outil":"Illustrator","Style":"Swiss Style"}'
+      data-stats='[{"val":"1","lbl":"Affiche"},{"val":"2023","lbl":"Année"},{"val":"Typo","lbl":"Focus"}]'
+      data-gallery='["img/TYPE SUISSE.png"]'>
+      <img class="ri-img" src="img/TYPE SUISSE.png" alt="">
+      <div class="ri-ov"></div>
+      <div class="ri-cat">Graphisme</div>
+      <div class="ri-arr">↗</div>
+      <div class="ri-body">
+        <div class="ri-num">005</div>
+        <h3 class="ri-title">Typographie Suisse</h3>
+      </div>
+      <div class="ri-line"></div>
+    </div>
+
+    <!-- 006 — Microfolie -->
+    <div class="ri rv d3"
+      data-c="com gr"
+      data-i="img/Microfolie.png"
+      data-cl="Communication"
+      data-n="006"
+      data-t="Microfolie — Affiche"
+      data-d="Création d'une affiche de communication pour un événement culturel — conception graphique et direction artistique. Recherche d'une identité visuelle forte alliant culture populaire et exigence graphique."
+      data-tg="Affiche,Direction artistique,Événementiel,Print"
+      data-meta='{"Catégorie":"Communication","Année":"2025","Outil":"Photoshop","Format":"A3 Print"}'
+      data-stats='[{"val":"A3","lbl":"Format"},{"val":"2025","lbl":"Année"},{"val":"Print","lbl":"Support"}]'
+      data-gallery='["img/Microfolie.png"]'>
+      <img class="ri-img" src="img/Microfolie.png" alt="">
+      <div class="ri-ov"></div>
+      <div class="ri-cat">Communication</div>
+      <div class="ri-arr">↗</div>
+      <div class="ri-body">
+        <div class="ri-num">006</div>
+        <h3 class="ri-title">Microfolie — Affiche</h3>
+      </div>
+      <div class="ri-line"></div>
+    </div>
+
+    <!-- 007 — Affiche Canada -->
+    <div class="ri rv d1"
+      data-c="gr"
+      data-i="img/Affiche_CANADA.PNG"
+      data-cl="Graphisme"
+      data-n="007"
+      data-t="Affiche — Semaine du Numérique"
+      data-d="Conception d'une affiche événementielle pour la Semaine du Numérique organisée par le département MMI. Travail sur la typographie expressive, la hiérarchie visuelle et l'impact graphique en format grand public."
+      data-tg="Affiche,Typographie,Direction artistique,Print"
+      data-meta='{"Catégorie":"Graphisme","Année":"2025","Outil":"Photoshop","Format":"A2 Print"}'
+      data-stats='[{"val":"A2","lbl":"Format"},{"val":"2025","lbl":"Année"},{"val":"Print","lbl":"Support"}]'
+      data-gallery='["img/Affiche_CANADA.PNG"]'>
+      <img class="ri-img" src="img/Affiche_CANADA.PNG" alt="">
+      <div class="ri-ov"></div>
+      <div class="ri-cat">Graphisme</div>
+      <div class="ri-arr">↗</div>
+      <div class="ri-body">
+        <div class="ri-num">007</div>
+        <h3 class="ri-title">Affiche — Semaine du Numérique</h3>
+      </div>
+      <div class="ri-line"></div>
+    </div>
+
+    <!-- 008 — Motion Générique d'intro -->
+    <div class="ri rv d2"
+      data-c="gr av"
+      data-i="img/the_night.png"
+      data-cl="Motion Design"
+      data-n="008"
+      data-t="Motion Design — Générique d'intro"
+      data-d="Création d'un générique d'introduction en motion design pour un thriller. Animation, typographie cinétique et sound design synchronisé. Réalisé entièrement sous After Effects."
+      data-tg="Motion Design,After Effects,Animation,Typographie"
+      data-meta='{"Catégorie":"Graphisme · Audiovisuel","Année":"2023","Outil":"After Effects","Type":"Motion Design"}'
+      data-stats='[{"val":"AE","lbl":"After Effects"},{"val":"2023","lbl":"Année"},{"val":"15s","lbl":"Durée"}]'
+      data-gallery='["img/the_night.png","img/the_nightmare.mp4"]'>
+      <img class="ri-img" src="img/the_night.png" alt="">
+      <div class="ri-ov"></div>
+      <div class="ri-cat">Motion Design</div>
+      <div class="ri-arr">↗</div>
+      <div class="ri-body">
+        <div class="ri-num">008</div>
+        <h3 class="ri-title">Motion — Générique d'intro</h3>
+      </div>
+      <div class="ri-line"></div>
+    </div>
+
+    <!-- 009 — tea-lim -->
+    <div class="ri rv d3"
+      data-c="gr av"
+      data-i="img/tea_lim.png"
+      data-cl="Motion Design"
+      data-n="009"
+      data-t="Motion Design — Brand Animation"
+      data-d="Animation d'identité de marque pour un projet de communication digitale pour une marque fictive de thé glacé au citron. Exporté en format web et social."
+      data-tg="Motion Design,Brand,After Effects,Social Media"
+      data-meta='{"Catégorie":"Graphisme · Audiovisuel","Année":"2024","Outil":"After Effects","Type":"Brand Motion"}'
+      data-stats='[{"val":"AE","lbl":"After Effects"},{"val":"2024","lbl":"Année"},{"val":"11s","lbl":"Durée"}]'
+      data-gallery='["img/tea_lim.png","img/tea_lim.mp4"]'>
+      <img class="ri-img" src="img/tea_lim.png" alt="">
+      <div class="ri-ov"></div>
+      <div class="ri-cat">Motion Design</div>
+      <div class="ri-arr">↗</div>
+      <div class="ri-body">
+        <div class="ri-num">009</div>
+        <h3 class="ri-title">Motion — Brand Animation</h3>
+      </div>
+      <div class="ri-line"></div>
+    </div>
+
+    <!-- 010 — Hypnothyse Savage -->
+    <div class="ri rv"
+      data-c="av"
+      data-i="img/pub.png"
+      data-cl="Audiovisuel"
+      data-n="010"
+      data-t="Hypnothyse Savage"
+      data-d="Motion design et étalonnage vidéo — identité visuelle animée pour un projet musical. Travail complet sur l'ambiance colorimétrique, les transitions et la cohérence esthétique entre visuels statiques et animés."
+      data-tg="Motion Design,Étalonnage,After Effects,Premiere Pro"
+      data-meta='{"Catégorie":"Audiovisuel","Année":"2023","Outils":"Premiere · AE","Type":"Motion Design"}'
+      data-stats='[{"val":"AE","lbl":"After Effects"},{"val":"2023","lbl":"Année"},{"val":"Full HD","lbl":"Format"}]'
+      data-gallery='["img/pub.png","img/Pub_Parfum.mp4"]'>
+      <img class="ri-img" src="img/pub.png" alt="">
+      <div class="ri-ov"></div>
+      <div class="ri-cat">Audiovisuel</div>
+      <div class="ri-arr">↗</div>
+      <div class="ri-body">
+        <div class="ri-num">010</div>
+        <h3 class="ri-title">Hypnothyse Savage</h3>
+      </div>
+      <div class="ri-line"></div>
+    </div>
+
+    <!-- 011 — North Hills -->
+    <div class="ri rv d1"
+      data-c="av"
+      data-i="img/northhills.png"
+      data-cl="Audiovisuel"
+      data-n="011"
+      data-t="North Hills"
+      data-d="Montage, mixage et incrustation pour un projet audiovisuel en cadre académique. Rendu professionnel incluant color grading, mixage son et effets d'incrustation sur fond vert."
+      data-tg="Montage,Mixage,Premiere Pro,Color grading"
+      data-meta='{"Catégorie":"Audiovisuel","Année":"2024","Outil":"Premiere Pro","Type":"Montage"}'
+      data-stats='[{"val":"PR","lbl":"Premiere Pro"},{"val":"2024","lbl":"Année"},{"val":"HD","lbl":"Format rendu"}]'
+      data-gallery='["img/northhills.png","img/northhills.mp4"]'>
+      <img class="ri-img" src="img/northhills.png" alt="">
+      <div class="ri-ov"></div>
+      <div class="ri-cat">Audiovisuel</div>
+      <div class="ri-arr">↗</div>
+      <div class="ri-body">
+        <div class="ri-num">011</div>
+        <h3 class="ri-title">North Hills</h3>
+      </div>
+      <div class="ri-line"></div>
+    </div>
+
+    <!-- 012 — L'Effondrement -->
+    <div class="ri rv d2"
+      data-c="av"
+      data-i="img/effondrement.png"
+      data-cl="Audiovisuel"
+      data-n="012"
+      data-t="Band-Annonce — L'EFFONDREMENT"
+      data-d="Montage d'une bande-annonce de la série L'Effondrement. Travail sur le rythme narratif, la tension dramatique et la gestion du montage en plans-séquences. Accent mis sur une atmosphère immersive et réaliste."
+      data-tg="Band-Annonce,L'EFFONDREMENT,Montage,Premiere Pro"
+      data-meta='{"Catégorie":"Audiovisuel","Année":"2026","Outil":"Premiere Pro · DaVinci","Type":"Fiction"}'
+      data-stats='[{"val":"5min","lbl":"Durée"},{"val":"2026","lbl":"Année"},{"val":"Full HD","lbl":"Format"}]'
+      data-gallery='["img/effondrement.png","img/EFFONDREMENT.mp4"]'>
+      <img class="ri-img" src="img/effondrement.png" alt="">
+      <div class="ri-ov"></div>
+      <div class="ri-cat">Audiovisuel</div>
+      <div class="ri-arr">↗</div>
+      <div class="ri-body">
+        <div class="ri-num">012</div>
+        <h3 class="ri-title">Band-Annonce — L'EFFONDREMENT</h3>
+      </div>
+      <div class="ri-line"></div>
+    </div>
+
+    <!-- 013 — Don't Look Up -->
+    <div class="ri rv d3"
+      data-c="av"
+      data-i="img/dlu.png"
+      data-cl="Audiovisuel"
+      data-n="013"
+      data-t="Band-Annonce — Don't Look UP"
+      data-d="Création d'une bande-annonce du film Don't Look Up. Travail de synchronisation musicale, sound design et montage dynamique afin de renforcer l'impact émotionnel et satirique du projet."
+      data-tg="Band-Annonce,Don't Look UP,Montage,DaVinci Resolve"
+      data-meta='{"Catégorie":"Audiovisuel","Année":"2024","Outil":"DaVinci Resolve","Type":"Montage"}'
+      data-stats='[{"val":"3min","lbl":"Durée"},{"val":"2024","lbl":"Année"},{"val":"1080p","lbl":"Format"}]'
+      data-gallery='["img/dlu.png","img/DLU.mp4"]'>
+      <img class="ri-img" src="img/dlu.png" alt="">
+      <div class="ri-ov"></div>
+      <div class="ri-cat">Audiovisuel</div>
+      <div class="ri-arr">↗</div>
+      <div class="ri-body">
+        <div class="ri-num">013</div>
+        <h3 class="ri-title">Band-Annonce — Don't Look UP</h3>
+      </div>
+      <div class="ri-line"></div>
+    </div>
+
+    <!-- 014 — Le Secret -->
+    <div class="ri rv d1"
+      data-c="av"
+      data-i="img/lesecret.png"
+      data-cl="Audiovisuel"
+      data-n="014"
+      data-t="Spot Prévention — Le Secret"
+      data-d="Réalisation d'un court métrage documentaire intitulé Le Secret, produit dans le cadre d'un projet universitaire. Prise de vue, montage et direction artistique. Le film aborde les effets néfastes des réseaux sociaux, notamment le harcèlement et ses conséquences."
+      data-tg="Documentaire,Narration,Montage,Premiere Pro"
+      data-meta='{"Catégorie":"Audiovisuel","Année":"2026","Outil":"Premiere Pro","Type":"Documentaire"}'
+      data-stats='[{"val":"1 min 11","lbl":"Durée"},{"val":"2026","lbl":"Année"},{"val":"Full HD","lbl":"Format"}]'
+      data-gallery='["img/lesecret.png","img/lesecret.mp4"]'>
+      <img class="ri-img" src="img/lesecret.png" alt="">
+      <div class="ri-ov"></div>
+      <div class="ri-cat">Audiovisuel</div>
+      <div class="ri-arr">↗</div>
+      <div class="ri-body">
+        <div class="ri-num">014</div>
+        <h3 class="ri-title">Spot Prévention — Le Secret</h3>
+      </div>
+      <div class="ri-line"></div>
+    </div>
+
+    <!-- 015 — Caribbean Lands · Développement (DERNIER) -->
+    <div class="ri rv d2"
+      data-c="dev"
+      data-dev-link="dev.html"
+      data-i="https://ik.imagekit.io/fj6o3tgrf/Caribbean%20Lands%20Logo.png?updatedAt=1746584484467"
+      data-cl="Développement"
+      data-n="015"
+      data-t="Caribbean Lands — Tourisme Web"
+      data-d="Site web touristique valorisant Martinique, Sainte-Lucie et Dominique. Conçu en HTML5, CSS3 et JavaScript vanilla, le projet met en avant des destinations caribéennes à travers une navigation fluide et un design responsive."
+      data-tg="Web Dev,HTML/CSS,JavaScript,SAE 1.05"
+      data-meta='{"Catégorie":"Développement","Année":"2023","Contexte":"SAE 1.05","Stack":"HTML · CSS · JS"}'
+      data-stats='[{"val":"3","lbl":"Îles couvertes"},{"val":"100%","lbl":"Responsive"},{"val":"2023","lbl":"Année"}]'
+      data-gallery='["https://ik.imagekit.io/fj6o3tgrf/Caribbean%20Lands%20Logo.png?updatedAt=1746584484467"]'>
+      <img class="ri-img" src="https://ik.imagekit.io/fj6o3tgrf/Caribbean%20Lands%20Logo.png?updatedAt=1746584484467" alt="">
+      <div class="ri-ov"></div>
+      <div class="ri-cat">Développement</div>
+      <div class="ri-arr">↗</div>
+      <div class="ri-body">
+        <div class="ri-num">015</div>
+        <h3 class="ri-title">Caribbean Lands — Tourisme Web</h3>
+      </div>
+      <div class="ri-line"></div>
+    </div>
+
+  </div>
+  <div class="empty" id="empty"><p style="font-size:48px;opacity:.2;margin-bottom:12px">○</p><p>Aucune réalisation dans cette catégorie.</p></div>
+</div>
+
+<footer>
+  <div class="flogo">Olivia<b>.</b></div>
+  <div class="flinks"><a href="index.html">Accueil</a><a href="img/cv-mian_olivia.pdf">Mon CV</a></div>
+  <span class="fcopy">© 2025 Olivia MIAN</span>
+</footer>
+
+<script>
+/* ── Curseur ── */
+const dot=document.getElementById('cDot'),ring=document.getElementById('cRing');
+let mx=0,my=0,rx=0,ry=0;
+window.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});
+(function aR(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(aR);})();
+
+/* ── Thème ── */
+function setT(t){
+  document.body.removeAttribute('data-theme');
+  if(t!=='dark')document.body.setAttribute('data-theme',t);
+  ['dark','light','daltonien'].forEach(x=>document.getElementById('t-'+x).classList.remove('on'));
+  document.getElementById('t-'+t).classList.add('on');
+  try{localStorage.setItem('om-theme',t);}catch(e){}
+}
+setT(localStorage.getItem('om-theme')||'dark');
+
+/* ── Reveal au scroll ── */
+const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('on');}),{threshold:.08});
+document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
+
+/* ── Filtres ── */
+const items=[...document.querySelectorAll('.ri')];
+const cats={all:items.length,gr:0,dev:0,com:0,av:0};
+items.forEach(i=>{
+  if(i.dataset.c.includes('gr'))cats.gr++;
+  if(i.dataset.c.includes('dev'))cats.dev++;
+  if(i.dataset.c.includes('com'))cats.com++;
+  if(i.dataset.c.includes('av'))cats.av++;
+});
+Object.entries(cats).forEach(([k,v])=>{const el=document.getElementById('cn-'+k);if(el)el.textContent='('+v+')';});
+
+function filt(cat){
+  document.querySelectorAll('.fb').forEach(b=>b.classList.remove('on'));
+  document.getElementById('fb-'+cat).classList.add('on');
+  let vis=0;
+  items.forEach(item=>{
+    const match=cat==='all'||item.dataset.c.includes(cat);
+    item.classList.toggle('hid',!match);
+    if(match){item.classList.remove('on');const idx=vis;setTimeout(()=>item.classList.add('on'),(idx%3)*60);vis++;}
+  });
+  document.getElementById('empty').classList.toggle('on',vis===0);
+}
+
+/* ══════════════════════════════════════
+   VUE PROJET IMMERSIVE
+══════════════════════════════════════ */
+const pv=document.getElementById('pv');
+
+function buildGallery(srcs){
+  const galleryEl=document.getElementById('pvGallery');
+  const images=srcs.filter(s=>!s.endsWith('.mp4')&&!s.endsWith('.webm'));
+  const videos=srcs.filter(s=>s.endsWith('.mp4')||s.endsWith('.webm'));
+  const hasPair=images.length>=1&&videos.length>=1;
+
+  if(hasPair){
+    galleryEl.classList.add('pv-pair');
+    const ordered=[...images,...videos];
+    galleryEl.innerHTML=ordered.map(src=>{
+      const isVideo=src.endsWith('.mp4')||src.endsWith('.webm');
+      if(isVideo){
+        return `<div class="pv-gallery-item" onclick="openMV('${src}','video')">
+          <video src="${src}" muted loop autoplay playsinline style="width:100%;height:100%;object-fit:cover;display:block;"></video>
+          <div class="pv-zoom-hint">▶ Voir la vidéo</div>
+        </div>`;
+      }
+      return `<div class="pv-gallery-item" onclick="openMV('${src}','image')">
+        <img src="${src}" alt="" loading="lazy">
+        <div class="pv-zoom-hint">↗ Agrandir</div>
+      </div>`;
+    }).join('');
+  } else {
+    galleryEl.classList.remove('pv-pair');
+    galleryEl.innerHTML=srcs.map(src=>{
+      const isVideo=src.endsWith('.mp4')||src.endsWith('.webm');
+      if(isVideo){
+        return `<div class="pv-gallery-item" onclick="openMV('${src}','video')">
+          <video src="${src}" muted loop autoplay playsinline style="width:100%;height:100%;object-fit:cover;display:block;"></video>
+          <div class="pv-zoom-hint">▶ Voir la vidéo</div>
+        </div>`;
+      }
+      return `<div class="pv-gallery-item" onclick="openMV('${src}','image')">
+        <img src="${src}" alt="" loading="lazy">
+        <div class="pv-zoom-hint">↗ Agrandir</div>
+      </div>`;
+    }).join('');
+  }
+}
+
+function openPV(el){
+  document.getElementById('pvImg').src=el.dataset.i||'';
+  document.getElementById('pvBadge').textContent=el.dataset.cl||'';
+  document.getElementById('pvNum').textContent=el.dataset.n||'';
+  document.getElementById('pvTitle').textContent=el.dataset.t||'';
+  document.getElementById('pvDesc').textContent=el.dataset.d||'';
+
+  document.getElementById('pvTags').innerHTML=
+    (el.dataset.tg||'').split(',').map(t=>`<span class="pv-side-tag">${t.trim()}</span>`).join('');
+
+  const statsEl=document.getElementById('pvStats');
+  try{
+    const stats=JSON.parse(el.dataset.stats||'[]');
+    statsEl.innerHTML=stats.map(s=>`<div class="pv-stat"><div class="pv-stat-val">${s.val}</div><div class="pv-stat-lbl">${s.lbl}</div></div>`).join('');
+    statsEl.style.display=stats.length?'grid':'none';
+  }catch(e){statsEl.style.display='none';}
+
+  const metaEl=document.getElementById('pvMeta');
+  try{
+    const meta=JSON.parse(el.dataset.meta||'{}');
+    const entries=Object.entries(meta);
+    if(entries.length){
+      metaEl.innerHTML=`<div class="pv-side-label">Informations</div>`
+        +entries.map(([k,v])=>`<div class="pv-meta-row"><span class="pv-meta-key">${k}</span><span class="pv-meta-val">${v}</span></div>`).join('');
+      metaEl.style.display='flex';
+    } else { metaEl.style.display='none'; }
+  }catch(e){metaEl.style.display='none';}
+
+  try{
+    const srcs=JSON.parse(el.dataset.gallery||'[]');
+    buildGallery(srcs);
+  }catch(e){document.getElementById('pvGallery').innerHTML='';}
+
+  const lnk=document.getElementById('pvLink');
+  const hasLink=el.dataset.devLink;
+  const label=el.dataset.devLabel||'Voir le projet';
+  if(hasLink){
+    lnk.href=el.dataset.devLink;
+    lnk.textContent=label+' ↗';
+    lnk.classList.remove('hidden');
+  } else {
+    lnk.classList.add('hidden');
+  }
+
+  const others=items.filter(i=>i!==el&&!i.classList.contains('hid'));
+  const picks=others.sort(()=>Math.random()-.5).slice(0,3);
+  document.getElementById('pvNextGrid').innerHTML=picks.map(p=>`
+    <div class="pv-next-card" onclick="openPV(items[${items.indexOf(p)}])">
+      <img class="pv-next-img" src="${p.dataset.i}" alt="">
+      <div class="pv-next-ov"></div>
+      <div class="pv-next-body">
+        <div class="pv-next-num">${p.dataset.n}</div>
+        <div class="pv-next-t">${p.dataset.t}</div>
+      </div>
+    </div>
+  `).join('');
+
+  history.replaceState(null,'','#'+el.dataset.n);
+
+  pv.scrollTop=0;
+  document.body.style.overflow='hidden';
+  pv.classList.add('on');
+
+  pv.querySelectorAll('.pv-next-card,.pv-gallery-item,.pv-side-link,.pv-close,.pv-dismiss').forEach(e=>{
+    e.addEventListener('mouseenter',()=>document.body.classList.add('hov'));
+    e.addEventListener('mouseleave',()=>document.body.classList.remove('hov'));
+  });
+}
+
+function closePV(){
+  pv.classList.remove('on');
+  document.body.style.overflow='';
+  history.replaceState(null,'',window.location.pathname);
+}
+
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeMV();closePV();}});
+
+/* ── Ouverture auto depuis un hash (ex: realisations(1).html#001) ── */
+function openFromHash(){
+  const hash=window.location.hash.replace('#','');
+  if(!hash)return;
+  const target=items.find(i=>i.dataset.n===hash);
+  if(target)setTimeout(()=>openPV(target),120);
+}
+window.addEventListener('DOMContentLoaded',openFromHash);
+
+/* ── Media viewer ── */
+const mv=document.getElementById('mv');
+function openMV(src,type){
+  const c=document.getElementById('mvContent');
+  c.innerHTML='';
+  if(type==='video'){
+    const v=document.createElement('video');
+    v.src=src;v.controls=true;v.autoplay=true;
+    c.appendChild(v);
+  } else {
+    const img=document.createElement('img');
+    img.src=src;
+    c.appendChild(img);
+  }
+  mv.classList.add('on');
+}
+function closeMV(){mv.classList.remove('on');document.getElementById('mvContent').innerHTML='';}
+
+/* ── Clic cartes ── */
+items.forEach(item=>item.addEventListener('click',()=>openPV(item)));
+
+/* ── Hover curseur ── */
+document.querySelectorAll('a,button,.ri,.fb').forEach(el=>{
+  el.addEventListener('mouseenter',()=>document.body.classList.add('hov'));
+  el.addEventListener('mouseleave',()=>document.body.classList.remove('hov'));
+});
+</script>
+</body>
+</html>
